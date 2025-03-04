@@ -1,0 +1,286 @@
+.family-suite{
+    margin: 0;
+    padding: 0;
+}
+.container-chitiet-phong{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.container-chitiet-phong .breadcrumb{
+    margin-left: 80px;
+}
+.content-chitiet-phong{
+    width: auto;
+    height: 500px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FAF6F3;
+}
+.img-content-chitiet-phong{
+    flex: 1; /* Ensure it grows and shrinks as needed */
+    margin-right: 30px;
+    overflow: hidden; /* Prevents content from overflowing */
+    margin-left: 20px;
+}
+.img-content-chitiet-phong img{
+    width: 880px;
+    height: 493px;
+    object-fit: cover; /* Giữ tỷ lệ và cắt ảnh nếu cần */
+}
+.details-chitiet-phong{
+    flex: 1;
+    max-width: 450px;
+    margin-left: 20px;
+}
+.details-chitiet-phong h2{
+    font-size: 26px;
+    font-weight: 500;
+    color: #1B374E;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.details-chitiet-phong p{
+    font-size: 16px;
+    /* line-height: 1.5; */
+    max-width: 430px;
+    color: #1B374E;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.details-chitiet-phong ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.details-chitiet-phong ul li{
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    color: #8C8C8C;
+}
+.details-chitiet-phong ul li img{
+    width: 35px;
+    height: auto;
+}
+.custom-arrow {
+    display: flex; /* Ensure the arrow is centered */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    width: 40px; /* Set a width for the arrow */
+    height: 40px; /* Set a height for the arrow */
+    border-radius: 50%; /* Optional: make it circular */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    z-index: 1000; /* Make sure it appears above other content */
+}
+
+.custom-arrow img {
+    width: 20px; /* Set the size of the arrow icon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Position arrows */
+.slick-prev {
+    left: 10px; /* Adjust as needed for positioning */
+}
+
+.slick-next {
+    right: 10px; /* Adjust as needed for positioning */
+}
+
+/* Hide default arrows if needed */
+.slick-prev:before, .slick-next:before {
+    display: none; /* Hides default arrow symbols */
+}
+.link {
+    text-decoration: none; /* Remove the underline */
+    color: inherit; /* Inherit the color from the parent element */
+}
+
+.link:hover {
+    text-decoration: underline; /* Optionally, add underline on hover */
+}
+
+@media (max-width: 1280px) {
+    .content-chitiet-phong {
+        padding: 40px;
+    }
+
+    .breadcrumb h3 {
+        font-size: 22px;
+    }
+
+    .details-chitiet-phong h2 {
+        font-size: 24px;
+    }
+
+    .details-chitiet-phong p,
+    .details-chitiet-phong ul li {
+        font-size: 15px;
+    }
+
+    .img-content-chitiet-phong img {
+        width: 700px;
+        height: 400px;
+    }
+
+    .custom-arrow img {
+        width: 20px; 
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content-chitiet-phong {
+        flex-direction: column; /* Chuyển sang dạng cột */
+        align-items: center; /* Căn giữa nội dung */
+        justify-content: center; /* Tùy chọn nếu cần */
+        height: auto;
+    }
+    
+    .breadcrumb h3 {
+        font-size: 20px;
+    }
+
+    .details-chitiet-phong {
+        order: 1; /* Chi tiết sẽ nằm ở trên */
+        text-align: center; /* Căn giữa nội dung */
+        margin-bottom: 20px;
+    }
+
+    .img-content-chitiet-phong {
+        order: 2; /* Hình ảnh sẽ nằm dưới chi tiết */
+        width: 100%; /* Đảm bảo kích thước phù hợp */
+        text-align: center; /* Căn giữa hình ảnh */
+        margin: 0 auto; /* Căn giữa toàn bộ khối hình ảnh */
+    }
+
+    .img-content-chitiet-phong img {
+        width: 550px;
+        height: 400px;
+    }
+
+    .details-chitiet-phong h2 {
+        font-size: 26px;
+        margin-top: -10px;
+    }
+
+    .details-chitiet-phong p,
+    .details-chitiet-phong ul li {
+        font-size: 16px;
+    }
+
+    .custom-arrow img {
+        width: 20px; 
+        height: auto;
+    }
+
+    .btn-datphong{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .content-chitiet-phong {
+        padding: 20px;
+    }
+
+    .breadcrumb {
+        margin-left: 30px !important;
+    }
+
+    .breadcrumb img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .breadcrumb h3 {
+        font-size: 18px;
+    }
+
+    .details-chitiet-phong h2 {
+        font-size: 22px;
+    }
+
+    .details-chitiet-phong p,
+    .details-chitiet-phong ul li {
+        font-size: 14px;
+    }
+
+    .img-content-chitiet-phong img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .breadcrumb {
+        font-size: 14px;
+    }
+
+    .custom-arrow img {
+        width: 18px; 
+        height: auto;
+    }
+
+    .btn-datphong {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .content-chitiet-phong {
+        padding: 10px;
+    }
+
+    .breadcrumb {
+        margin-left: 20px !important;
+    }
+
+    .breadcrumb img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .breadcrumb h3 {
+        font-size: 16px;
+    }
+
+    .details-chitiet-phong h2 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .details-chitiet-phong p,
+    .details-chitiet-phong ul li {
+        font-size: 12px;
+    }
+
+    .details-chitiet-phong ul li img{
+        width: 28px;
+        height: auto;
+    }
+
+    .img-content-chitiet-phong img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .breadcrumb {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .custom-arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .custom-arrow img {
+        width: 14px;
+        height: auto;
+    }
+}
+
+

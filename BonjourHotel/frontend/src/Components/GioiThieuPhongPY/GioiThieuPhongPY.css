@@ -1,0 +1,82 @@
+.gioithieu-phongpy{
+    margin: 0;
+    padding: 0;
+}
+.container-phongpy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 30px;
+}
+.content-phongpy{
+    max-width: 1200px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.content-phongpy-left{
+    max-width: 45%;
+}
+.content-phongpy-left h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #1B374E;
+    text-align: left;
+}
+.content-phongpy-left p{
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #1B374E;
+    text-align: left;
+}
+.content-phongpy-left ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.content-phongpy-left ul li{
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    color: #8C8C8C;
+}
+.content-phongpy-left img{
+    width: 35px;
+    height: auto;
+    margin-right: 10px;
+}
+.btn-datphong{
+    display: block;
+    padding: 10px 20px;
+    background-color: #1B374E;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Lora';
+    cursor: pointer;
+}
+.xem-tatca-phong{
+    margin-top: 40px;
+    color: #1B374E;
+    text-decoration: underline;
+    font-size: 15px;
+    cursor: pointer;
+}
+.content-phongpy-right{
+    width: 765px;
+    height: 521px;
+    object-fit: cover;
+    z-index: 1; /* Đảm bảo ảnh nằm trên cùng */
+}
+.slick-dots {
+    position: absolute;
+    bottom: 10px; /* Điều chỉnh vị trí nếu cần */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slick-dots li {
+    margin: 0 1px; /* Khoảng cách giữa các dot (giảm khoảng cách) */
+}

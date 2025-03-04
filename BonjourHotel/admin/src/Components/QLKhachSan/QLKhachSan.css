@@ -1,0 +1,99 @@
+.ql-khachsan {
+    /* max-width: 1000px; 
+    height: 700px; 
+    overflow-y: auto;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 70px; */
+    width: 80%;
+    margin: 20px auto;
+    height: calc(100vh - 150px); /* Chiều cao cố định cho container, tùy chỉnh theo nhu cầu */
+    
+}
+
+.branch-buttons {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.branch-buttons button {
+    font-family: 'Lora';
+    font-size: 20px;
+    width: 150px;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    color: #1B374E;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.branch-buttons button:hover {
+    background-color: #F3F3F3;
+}
+
+.branch-buttons .active {
+    font-weight: bold;
+    border: 2px solid #1B374E;
+}
+
+.branch-info {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.branch-image {
+    width: 395px;
+    height: 482px;
+}
+
+.branch-details {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: 30px;
+}
+
+.branch-details p {
+    margin: 5px 0;
+    color: #1B374E; /* Thêm màu cho văn bản */
+    font-weight: 500;
+    text-align: justify;
+}
+.branch-details p strong {
+    color: #8A462D; /* Thay đổi màu cho phần chữ in đậm (tiêu đề) */
+}
+
+
+.branch-details input,
+.branch-details textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.edit-buttons {
+    margin-top: 20px;
+    text-align: right; /* Căn chỉnh nút về phía bên phải */
+}
+
+.edit-buttons button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1B374E;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.edit-buttons button:hover {
+    background-color: #8A462D;
+}

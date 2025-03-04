@@ -1,0 +1,104 @@
+/* Container bao quanh cả navbar và nút toggle */
+.navbar-container {
+    position: relative;
+    /* Đảm bảo container chứa navbar và nút toggle */
+}
+
+/* Style cho thanh navbar */
+.navbar {
+    width: 60px;
+    /* Giảm chiều rộng khi đóng */
+    background-color: #1B374E;
+    position: absolute;
+    height: 100vh;
+    padding: 0 10px;
+    /* Giảm padding khi đóng */
+    left: -100%;
+    /* Ban đầu thanh navbar bị ẩn đi ngoài màn hình */
+    transition: all 0.6s ease-in-out;
+    /* Kéo dài thời gian và dùng ease-in-out cho hiệu ứng mượt mà */
+}
+
+/* Khi thanh navbar được kích hoạt (mở) */
+.navbar.active {
+    left: 0;
+    width: 240px;
+    /* Độ rộng khi mở */
+    padding: 0 30px;
+    /* Padding khi mở */
+}
+
+/* Các thẻ <ul> trong thanh navbar */
+.navbar ul {
+    padding: 0;
+}
+
+/* Các thẻ <li> trong thanh navbar */
+.navbar ul li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+/* Khi hover lên các thẻ <li> */
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 6px;
+    justify-content: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.navbar:not(.active) ul li a {
+    width: 40px;
+    /* Chiều rộng nhỏ hơn khi navbar đóng */
+}
+
+.navbar ul li a.active {
+    background-color: #244a6a !important;
+}
+
+/* Tắt hover và active cho tất cả các thẻ <a> trong navbar (kể cả khi mở hoặc đóng) */
+.navbar ul li a:hover,
+.navbar ul li a:active {
+    background-color: transparent;
+    /* Không thay đổi màu nền khi hover khi navbar đóng hoặc mở */
+}
+
+/* Icon trong các thẻ <li> */
+.navbar ul li a svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    transition: margin-right 0.3s ease;
+}
+
+/* Ẩn chữ khi thanh navbar đóng, nhưng giữ lại icon */
+.navbar:not(.active) ul li a span {
+    display: none;
+}
+
+/* Giữ lại icon khi thanh navbar đóng */
+.navbar:not(.active) ul li a svg {
+    visibility: visible;
+    margin-right: 10px;
+}
+
+/* Style cho nút toggle thanh navbar khi navbar không mở */
+.sidebar-toggle {
+    position: absolute;
+    top: 0px;
+    background-color: #1B374E;
+    color: white;
+    padding: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+    font-size: 26px;
+    z-index: 1000;
+    transition: left 0.6s ease-in-out; /* Giữ lại hiệu ứng mượt */
+}
+
+  

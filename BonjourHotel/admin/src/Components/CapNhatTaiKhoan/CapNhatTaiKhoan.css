@@ -1,0 +1,118 @@
+.capnhat-taikhoan {
+    position: fixed; /* Đặt vị trí cố định để popup luôn nằm ở giữa */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+    display: flex; /* Sử dụng flex để căn giữa */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    z-index: 1000; /* Đảm bảo popup nằm trên các phần tử khác */
+}
+
+.container-capnhat-taikhoan {
+    background-color: white;
+    animation: fadeIn 0.5s;
+    display: flex;
+    flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    height: 300px;
+    max-width: 1000px;
+    position: relative; /* Để căn chỉnh nút ở góc dưới bên phải */
+}
+
+.container-capnhat-taikhoan h2{
+    font-size: 30px;
+    color: #1B374E;
+    margin-bottom: 20px;
+}
+
+.form-container-capnhat-taikhoan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.form-section-capnhat-taikhoan {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-group-capnhat-taikhoan {
+    margin-bottom: 25px;
+}
+
+.form-group-capnhat-taikhoan span{
+    color: red;
+}
+
+.form-group-capnhat-taikhoan label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group-capnhat-taikhoan input,
+.form-group-capnhat-taikhoan select {
+    font-family: 'Lora';
+    width: 100%;
+    max-width: 250px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group-capnhat-taikhoan select {
+    background: #fff;
+}
+
+.form-group-capnhat-taikhoan textarea {
+    font-family: 'Lora';
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.upload-action{
+    display: flex;
+    flex-direction: column; /* Để các phần tử nằm dọc */
+    align-items: flex-start; /* Căn chỉnh bên trái */
+    justify-content: flex-start; /* Căn chỉnh lên trên cùng */
+    margin-top: 20px;
+}
+
+.upload-action label{
+    margin-top: 5px;
+}
+
+.img-upload {
+    display: flex;
+    justify-content: flex-start; /* Căn chỉnh các ảnh bên trái */
+    gap: 10px; /* Khoảng cách giữa các ảnh */
+}
+
+.img-upload img {
+    width: 100%; /* Đảm bảo ảnh chiếm 100% chiều rộng của thẻ cha */
+    height: auto; /* Chiều cao tự động để giữ tỷ lệ */
+    max-height: 150px; /* Giới hạn chiều cao tối đa */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+.btn-action-capnhat-taikhoan {
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    bottom: 20px; /* Cách dưới 20px */
+    right: 5%;
+    display: flex; /* Để căn chỉnh các nút theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các nút */
+}

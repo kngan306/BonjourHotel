@@ -1,0 +1,99 @@
+.tienich-phong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Thêm để căn giữa theo chiều dọc */
+    margin: 0;
+    padding: 0;
+}
+.tienich-phong h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #1B374E;
+}
+.container-tienich-phong{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột đều nhau */
+    gap: 25px; /* Khoảng cách giữa các item */
+    justify-items: center; /* Căn giữa các item theo chiều ngang */
+    margin-bottom: 40px;
+    margin-left: 100px;
+    padding-left: 100px; /* Đẩy tất cả sang phải */
+}
+.tienich{
+    display: contents; /* Để các item con không bị ảnh hưởng bởi layout */
+}
+.tienich-item{
+    display: flex;
+    align-items: center;
+    color: #1B374E;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    width: 400px; /* Điều chỉnh chiều rộng tại đây (có thể tăng thêm nếu cần) */
+    text-align: center; /* Căn giữa nội dung */
+}
+.tienich-item img{
+    margin-right: 10px;
+    width: 40px;
+    height: 36px;
+}
+
+@media (max-width: 1280px) {
+    .container-tienich-phong {
+        margin-left: 50px;
+        padding-left: 50px;
+    }
+    .tienich-item {
+        width: 280px; /* Giảm chiều rộng */
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-tienich-phong {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px; /* Giảm khoảng cách */
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .tienich-item {
+        width: 300px; /* Thu hẹp chiều rộng hơn */
+    }
+    .tienich-phong h2 {
+        font-size: 28px; /* Giảm kích thước font của tiêu đề */
+    }
+}
+
+@media (max-width: 800px) {
+    .tienich-item {
+        width: 250px;
+    }
+    .tienich-item img {
+        width: 35px; /* Giảm kích thước hình ảnh */
+        height: 32px;
+    }
+    .tienich-phong h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container-tienich-phong {
+        gap: 15px;
+    }
+    .tienich-item {
+        flex-direction: column; /* Chuyển layout thành dọc */
+        align-items: center;
+        width: auto; /* Tự động chỉnh chiều rộng */
+    }
+    .tienich-item img {
+        margin-right: 0;
+        margin-bottom: 5px; /* Khoảng cách giữa hình và chữ */
+    }
+    .tienich-phong h2 {
+        font-size: 24px;
+    }
+    .tienich-item span {
+        font-size: 14px;
+    }
+}

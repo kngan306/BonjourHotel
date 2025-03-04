@@ -1,0 +1,189 @@
+.ql-phong {
+    margin: 0;
+    padding: 0;
+}
+
+.container-ql-phong {
+    width: 90%;
+    margin: 20px auto;
+    height: calc(100vh - 150px);
+    /* Chiều cao cố định cho container */
+    display: flex;
+    flex-direction: column;
+}
+
+.option-ql-phong {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.option-ql-phong div {
+    display: flex;
+    align-items: center;
+}
+
+.option-ql-phong label {
+    font-family: 'Lora';
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.option-ql-phong select {
+    font-family: 'Lora';
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 8px 15px; /* Giảm padding để tránh quá rộng */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: auto; /* Để chiều rộng tự động điều chỉnh theo nội dung */
+    min-width: 150px; /* Đảm bảo select không nhỏ hơn 150px */
+    max-width: 200px; /* Tùy chọn nếu muốn giới hạn chiều rộng */
+}
+
+.search {
+    position: relative;
+    /* Tạo vùng chứa để định vị tuyệt đối cho icon */
+    width: 250px;
+}
+
+.search img {
+    position: absolute;
+    left: 10px;
+    /* Khoảng cách từ cạnh trái của input */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search input[type="text"] {
+    font-family: 'Lora';
+    font-size: 15px;
+    padding: 8px 8px 10px 50px;
+    /* Tăng padding-left để icon có khoảng cách xa hơn với chữ "Tìm kiếm" */
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    /* Căn giữa placeholder text theo trục dọc */
+}
+
+.option-ql-phong button {
+    font-family: 'Lora';
+    font-size: 15px;
+    padding: 10px 18px;
+    background-color: #1B374E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-create:hover {
+    background-color: #244a6a;
+}
+
+.content-table-ql-phong {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.table-responsive-ql-phong {
+    overflow-x: auto;
+    /* Cho phép cuộn ngang */
+    overflow-y: auto;
+    /* Cho phép cuộn dọc */
+    max-height: 600px;
+    /* Đặt max-height nếu bạn muốn thêm thanh cuộn dọc */
+}
+
+.content-table-ql-phong table {
+    width: 100%;
+    min-width: 1200px;
+    /* Đặt chiều rộng tối thiểu để tránh quá nhỏ */
+    table-layout: auto;
+    /* Cho phép điều chỉnh kích thước tự động */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.content-table-ql-phong table th,
+.content-table-ql-phong table td {
+    font-size: 15px;
+    padding: 10px;
+    /* Đảm bảo các ô có khoảng cách cho nội dung */
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.content-table-ql-phong table th {
+    text-align: center;
+    background-color: rgba(93, 182, 238, 0.24);
+}
+
+.content-table-ql-phong table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.content-table-ql-phong button {
+    width: 72px;
+}
+
+/* CSS phân trang */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Tăng khoảng cách giữa các nút */
+    margin-top: 30px;
+}
+
+/* Nút phân trang mặc định */
+.pagination button {
+    width: 40px;
+    padding: 8px 12px; /* Kích thước gọn hơn */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    background-color: #fff;
+    color: black; /* Màu chữ mặc định */
+    cursor: pointer;
+}
+
+/* Nút đang được chọn (active) */
+.pagination button.active {
+    width: 40px;
+    background-color: #1B374E; /* Màu nền nút đang được chọn */
+    color: #fff;
+    border-color: #1B374E; /* Thêm đường viền màu chủ đạo */
+}
+
+/* Nút hover (khi di chuột qua) */
+.pagination button:hover:not(:disabled) {
+    background-color: #244a6a;
+    color: #fff;
+}
+
+/* Nút bị vô hiệu hóa (disabled) */
+.pagination button:disabled {
+    width: 40px;
+    cursor: not-allowed;
+    opacity: 0.5;
+    background-color: #f5f5f5; /* Màu nền nhẹ hơn cho nút bị vô hiệu hóa */
+    color: #999;
+    border-color: #ddd; /* Đường viền nhạt hơn */
+}
+
+/* Style riêng cho nút mũi tên */
+.pagination button:first-child,
+.pagination button:last-child {
+    padding: 4px 6px; /* Kích thước nhỏ hơn (bằng một nửa nút số) */
+    font-size: 10px;
+    border-radius: 20%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

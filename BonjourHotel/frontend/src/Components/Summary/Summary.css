@@ -1,0 +1,280 @@
+.summary-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  /* position: relative; */
+}
+
+.summary-header h2 {
+  margin: 0;
+  padding-bottom: 6px;
+  font-size: 26px;
+  text-align: left;
+  color: #1B374E;
+}
+
+.summary-header p {
+  font-size: 14px;
+  text-align: justify;
+  color: #888;
+  margin: 0;
+  /* Xóa margin mặc định */
+  margin-bottom: 30px;
+}
+
+.room-booking-info {
+  display: flex;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.room-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.room-details {
+  flex-grow: 1;
+}
+
+/* Sử dụng flexbox để căn chỉnh Giá phòng và số tiền */
+.room-details .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #666;
+}
+
+.room-details h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #1B374E;
+}
+.room-details span{
+  font-size: 15px;
+}
+.room-price {
+  font-size: 18px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.billing-details {
+  margin-bottom: 20px;
+}
+
+.billing-details .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.billing-details .row span {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Căn chỉnh dòng Tổng phí thuê */
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.total-price h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1B374E;
+}
+
+.total-price p {
+  font-size: 18px;
+  color: #1B374E;
+  font-weight: bold;
+  margin: 0;
+}
+
+.line1 {
+  width: 100%;
+  /* Đảm bảo dòng kẻ chiếm toàn bộ chiều rộng container */
+  height: 1.5px;
+  background-color: #ccc;
+  /* Màu của dòng kẻ */
+  border: none;
+  /* Loại bỏ các đường viền mặc định của <hr> */
+  margin: 10px 0;
+  /* Khoảng cách trên và dưới dòng kẻ */
+}
+
+/* Căn chỉnh nút ở giữa và tạo khoảng cách */
+.booking-button-container1 {
+  display: flex;
+  justify-content: center;
+  /* Căn giữa nút */
+  margin-top: 30px;
+  /* Tạo khoảng cách giữa thông tin trên và nút */
+}
+
+.btn-datngay{
+  display: block;
+  padding: 10px 20px;
+  background-color: #1B374E;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Lora';
+  cursor: pointer;
+}
+.btn-datngay:hover{
+  background-color: #244a6a;
+}
+
+.booking-button1 {
+  background-color: #1B374E;
+  /* Màu nền giống trong hình */
+  color: white;
+  /* Màu chữ trắng */
+  font-size: 16px;
+  /* Kích thước chữ */
+  padding: 10px 20px;
+  /* Khoảng đệm bên trong nút */
+  border: none;
+  /* Xóa viền mặc định */
+  border-radius: 15px;
+  /* Tạo bo tròn cho nút */
+  cursor: pointer;
+  /* Thay đổi con trỏ khi hover */
+  outline: none;
+  /* Xóa viền khi bấm vào */
+  display: inline-block;
+  /* Căn chỉnh khớp */
+}
+
+.booking-button1:hover {
+  background-color: #78899b;
+  /* Thay đổi màu khi hover */
+}
+
+@media (max-width: 1280px) {
+  .summary-container {
+    max-width: 500px;
+  }
+
+  .room-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .room-details h3 {
+    font-size: 18px;
+  }
+
+  .billing-details .row span {
+    font-size: 14px;
+  }
+
+  .btn-datngay {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .summary-container {
+    max-width: 450px;
+    padding: 15px;
+  }
+
+  .room-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .room-details h3 {
+    font-size: 16px;
+  }
+
+  .billing-details .row span {
+    font-size: 13px;
+  }
+
+  .btn-datngay {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .summary-container {
+    max-width: 90%; /* Chiếm 90% màn hình */
+    padding: 10px;
+  }
+
+  .summary-header h2{
+    font-size: 24px;
+  }
+
+  .room-booking-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .room-image {
+    margin: 0 0 5px;
+  }
+
+  .room-details {
+    margin-left: 20px;
+  }
+  
+  .room-details h3 {
+    font-size: 18px;
+  }
+
+  .total-price h3{
+    margin-top: 10px !important;
+  }
+
+  .total-price p{
+    margin-top: 10px !important;
+  }
+
+  .btn-datngay {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .summary-container {
+    max-width: 100%; /* Chiếm toàn bộ màn hình */
+    padding: 10px;    /* Giảm padding */
+  }
+
+  .summary-header h2 {
+    font-size: 22px;
+  }
+
+  .summary-header p {
+    font-size: 13px;
+    text-align: justify;
+  }
+
+  .room-details h3 {
+    font-size: 14px;
+  }
+
+  .billing-details .row span {
+    font-size: 13px;
+  }
+
+  .btn-datngay {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}

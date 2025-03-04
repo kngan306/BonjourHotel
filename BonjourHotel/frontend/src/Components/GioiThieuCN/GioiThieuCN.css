@@ -1,0 +1,140 @@
+.gioithieu-chinhanh{
+    margin: 0;
+    padding: 0;
+}
+.container-cn{
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: flex-start; /* Căn phần tử theo chiều dọc */
+    padding: 20px;
+    background: #FAF6F3;
+    margin-top: 30px;
+}
+.hotel-card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+}
+.hotel-card{
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 259px;
+    text-align: center;
+}
+.hotel-card img{
+    width: 259px;
+    height: 316px;
+    cursor: pointer;
+}
+.hotel-card h3{
+    font-size: 19px;
+    color: #1B374E;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.hotel-card p{
+    font-size: 15px;
+    color: #1B374E;
+    margin: 0px 10px 10px;
+}
+.about-section{
+    max-width: 400px;
+    padding: 10px 20px;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+.about-section h2{
+    font-size: 44px;
+    font-weight: 700;
+    color: #1B374E;
+    margin-bottom: 10px;
+}
+.about-section p{
+    font-size: 20px;
+    color: #1B374E;
+    text-align: justify;
+}
+
+@media (max-width: 1280px) {
+    .about-section h2 {
+        font-size: 36px;
+    }
+    .about-section p {
+        font-size: 18px;
+    }
+    .hotel-card {
+        width: 220px;
+        height: 350px;
+    }
+    .hotel-card img{
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-cn {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-section {
+        order: -1;
+        max-width: 100%;
+        margin-top: -10px;
+    }
+    .hotel-card-wrapper {
+        display: flex;
+        flex-direction: row; /* Keep hotel cards in a row */
+        justify-content: center;
+    }
+    .hotel-card {
+        flex-direction: row; /* Keep hotel cards in a row */
+        justify-content: center;
+        width: 200px;
+    }
+    .hotel-card img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .about-section h2 {
+        font-size: 28px;
+    }
+    .about-section p {
+        font-size: 16px;
+    }
+    .hotel-card-wrapper {
+        gap: 0px;
+    }
+    .hotel-card {
+        width: 180px;
+    }
+    .hotel-card img{
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hotel-card-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .hotel-card {
+        width: 220px;
+        height: 350px;
+        margin: 10px 0;
+    }
+    .hotel-card img {
+        width: 220px;
+        height: 220px;
+    }
+    .container-cn {
+        padding: 10px;
+    }
+}

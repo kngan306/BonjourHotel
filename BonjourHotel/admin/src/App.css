@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px; /* Tăng khoảng cách padding */
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+header svg{
+    font-size: 40px;
+}
+.logo {
+    display: flex;
+    align-items: center; /* Căn giữa hình ảnh logo và văn bản logo theo chiều dọc */
+    flex-shrink: 0; /* Giữ logo ở kích thước cố định */
+    top: 10px;
+}
+
+.logo img {
+    height: 50px;
+}
+.app {
+    display: flex;
+    transition: all 0.5s ease; /* Hiệu ứng chuyển tiếp mượt mà */
+}
+.navbar-active .main {
+    margin-left: 240px; /* Điều chỉnh giá trị này theo chiều rộng của navbar */
+}
+.nav-profile {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Khoảng cách giữa cờ và profile */
+    flex-grow: 1; /* Đẩy nav-profile sang bên phải */
+    justify-content: flex-end; /* Căn phải */
+}
+
+.flag img, .profile img {
+    height: 30px;
+}
+.main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 40px; */
+    flex-grow: 1; /* Cho phép nội dung chính chiếm không gian còn lại */
+    padding: 20px; /* Thêm một chút khoảng cách cho nội dung */
+    transition: margin-left 0.5s ease; /* Hiệu ứng chuyển tiếp mượt mà cho nội dung */
+}
+
+/*CSS cho cac nut button o table */
+.btn-action {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-update, .btn-delete {
+    flex: 1; /* Đảm bảo cả hai nút có chiều rộng bằng nhau */
+    font-family: 'Lora';
+    font-size: 15px;    
+    color: black;
+    width: 50px; /* Đặt chiều rộng cố định cho cả hai nút */
+    padding: 5px 10px; /* Padding đều cho các nút */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-update{
+    background-color: rgba(143, 201, 100, 0.91);
+}
+
+.btn-update:hover{
+    background-color: rgba(143, 201, 100, 0.61);
+}
+
+.btn-delete{
+    background-color: #E36C6C;
+}
+
+.btn-delete:hover{
+    background-color: rgba(227, 108, 108, 0.8);
+}

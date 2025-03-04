@@ -1,0 +1,155 @@
+.service-info {
+    max-width: 800px; /* Điều chỉnh chiều rộng tối đa của form */
+    margin: 0 auto; /* Căn giữa form */
+    padding: 20px;
+    position: relative; /* Thêm để sử dụng positioning */
+}
+.service-info h2 {
+    text-align: left;
+    font-size: 26px;
+    color: #1B374E;
+    margin: 0;
+    /* Xóa margin mặc định */
+    padding-bottom: 6px;
+    /* Khoảng cách nhỏ dưới tiêu đề */
+}
+
+.step-subtext-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0; /* Xóa margin mặc định */
+    padding-bottom: 15px; /* Khoảng cách giữa subtext và nhóm tiếp theo */
+}
+
+.step {
+    font-size: 14px; /* Kích thước chữ cho Chú thích */
+    color: #90A3BF; /* Màu chữ */
+    margin-left: auto; /* Đẩy sang bên phải */
+}
+
+.subtext {
+    font-size: 14px; /* Kích thước chữ cho Chú thích */
+    color: #90A3BF; /* Màu chữ */
+    text-align: left; /* Căn trái cho chú thích */
+}
+
+.checkbox-container {
+    border-radius: 8px; /* Bo tròn các góc */
+    padding: 25px; /* Khoảng cách bên trong ô */
+    background-color: #FAF6F3; /* Màu nền cho ô */
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.form-group1 {
+    display: flex; /* Sử dụng flexbox để căn chỉnh */
+    align-items: center; /* Căn giữa checkbox và nhãn theo chiều dọc */
+    justify-content: flex-start; /* Đặt checkbox và nhãn cạnh nhau */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Khoảng cách giữa checkbox và nhãn */
+    transform: scale(1.2); /* Phóng to checkbox */
+}
+
+.form-group1 label { 
+    font-size: 16px;
+    font-weight: 500;
+    color: #1B374E;
+    margin-left: 5px; /* Khoảng cách giữa checkbox và nhãn */
+}
+
+.line {
+    width: 100%; /* Đảm bảo dòng kẻ chiếm toàn bộ chiều rộng container */
+    height: 1px;
+    background-color: #ccc; /* Màu của dòng kẻ */
+    border: none; /* Loại bỏ các đường viền mặc định của <hr> */
+    margin: 10px 0; /* Khoảng cách trên và dưới dòng kẻ */
+}
+
+.divider {
+    width: 100%; /* Đảm bảo <hr> chiếm toàn bộ chiều ngang */
+    margin-top: 10px; /* Khoảng cách giữa checkbox và <hr> */
+}
+
+
+@media (max-width: 1280px) {
+    .service-info {
+        max-width: 700px; /* Giảm chiều rộng tối đa */
+        padding: 15px;
+    }
+
+    .step-subtext-container {
+        flex-direction: column; /* Đặt step và subtext xếp dọc */
+        align-items: flex-start; /* Căn chỉnh trái */
+    }
+
+    .checkbox-container {
+        padding: 20px; /* Giảm padding bên trong */
+    }
+
+    .form-group1 label {
+        font-size: 14px; /* Giảm kích thước font */
+    }
+}
+
+@media (max-width: 1024px) {
+    .service-info {
+        padding: 10px;
+    }
+
+    .step-subtext-container {
+        gap: 10px; /* Khoảng cách nhỏ hơn giữa step và subtext */
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1); /* Giảm kích thước checkbox */
+    }
+}
+
+@media (max-width: 800px) {
+    .service-info {
+        max-width: 90%; /* Chiếm 90% màn hình */
+    }
+
+    .service-info h2 {
+        font-size: 24px; /* Giảm kích thước tiêu đề */
+    }
+
+    .checkbox-container {
+        padding: 15px; /* Giảm padding */
+    }
+
+    input[type="checkbox"] {
+        margin-right: 5px; /* Giảm khoảng cách */
+    }
+
+    .divider {
+        margin-top: 5px; /* Giảm khoảng cách trên dưới */
+    }
+}
+
+@media (max-width: 500px) {
+    .service-info {
+        max-width: 100%; /* Chiếm toàn bộ màn hình */
+        padding: 10px;    /* Giảm padding */
+    }
+
+    .service-info h2 {
+        font-size: 22px; 
+    }
+
+    .checkbox-container {
+        padding: 10px; /* Giảm thêm padding */
+    }
+
+    input[type="checkbox"] {
+        transform: scale(0.9); /* Thu nhỏ checkbox */
+    }
+
+    .divider {
+        margin: 5px 0; /* Giảm khoảng cách hơn nữa */
+    }
+    
+}
+

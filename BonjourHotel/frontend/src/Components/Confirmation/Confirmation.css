@@ -1,0 +1,171 @@
+.confirmation {
+    max-width: 800px; /* Điều chỉnh chiều rộng tối đa của form */
+    margin: 0 auto; /* Căn giữa form */
+    padding: 20px;
+    position: relative; /* Sử dụng positioning */
+}
+
+.confirmation h2 {
+    text-align: left;
+    font-size: 26px;
+    color: #1B374E;
+    margin: 0;
+    /* Xóa margin mặc định */
+    padding-bottom: 6px;
+    /* Khoảng cách nhỏ dưới tiêu đề */
+}
+
+.step-subtext-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0; /* Xóa margin mặc định */
+    padding-bottom: 15px; /* Khoảng cách giữa subtext và nhóm tiếp theo */
+}
+
+.step, .subtext {
+    font-size: 14px;
+    color: #90A3BF;
+    margin: 0;
+}
+
+.subtext {
+    text-align: left;
+}
+
+.checkbox-container2 {
+    border-radius: 8px; /* Bo tròn các góc */
+    padding: 15px; /* Khoảng cách bên trong ô */
+    background-color: #FAF6F3; /* Màu nền */
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.form-group2 {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Phóng to checkbox */
+    border: 1px solid #000; /* Màu viền đậm cho checkbox */
+}
+
+.form-group2 label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1B374E;
+    margin-left: 5px; /* Khoảng cách giữa checkbox và nhãn */
+}
+
+/* Căn chỉnh nút ở giữa và tạo khoảng cách */
+.booking-button-container {
+    display: flex;
+    justify-content: center; /* Căn giữa nút */
+    margin-top: 50px; /* Tạo khoảng cách giữa thông tin trên và nút */
+}
+
+.booking-button {
+    font-family: 'Lora';
+    background-color: #90A3BF; /* Màu nền giống trong hình */
+    color: white; /* Màu chữ trắng */
+    font-size: 16px; /* Kích thước chữ */
+    padding: 10px 20px; /* Khoảng đệm bên trong nút */
+    border: none; /* Xóa viền mặc định */
+    border-radius: 15px; /* Tạo bo tròn cho nút */
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+    outline: none; /* Xóa viền khi bấm vào */
+    display: inline-block; /* Căn chỉnh khớp */
+}
+
+.booking-button:hover {
+    background-color: #78899b; /* Thay đổi màu khi hover */
+}
+
+@media (max-width: 1280px) {
+    .confirmation {
+        max-width: 700px; /* Giảm chiều rộng tối đa */
+        padding: 15px;
+    }
+
+    .form-group2 label {
+        font-size: 14px;
+    }
+
+    .booking-button {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .confirmation {
+        padding: 10px;
+    }
+
+    .booking-button {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+}
+
+@media (max-width: 800px) {
+    .confirmation {
+        max-width: 90%; /* Chiếm 90% màn hình */
+    }
+
+    .step-subtext-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .checkbox-container2 {
+        padding: 15px;
+    }
+
+    .confirmation h2 {
+        font-size: 24px;
+    }
+
+    .step, .subtext {
+        font-size: 12px;
+    }
+
+    .form-group2 label {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .booking-button {
+        font-size: 13px;
+        padding: 7px 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .confirmation {
+        max-width: 100%; /* Chiếm toàn bộ màn hình */
+        padding: 10px;    /* Giảm padding */
+    }
+
+    .confirmation h2 {
+        font-size: 22px;
+    }
+
+    .step-subtext-container {
+        text-align: center;
+        align-items: center;
+    }
+
+    .step {
+        margin-top: 5px;
+    }
+
+    .checkbox-container2 {
+        padding: 8px;
+    }
+
+    .booking-button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}

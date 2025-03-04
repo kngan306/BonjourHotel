@@ -1,0 +1,187 @@
+.dang-ky {
+    width: 100vw; /* chiếm toàn bộ chiều rộng của cửa sổ */
+    height: 100vh; /* chiếm toàn bộ chiều cao của cửa sổ */
+    margin: 0;
+    background-image: url('../Assets/image-login-register.jpg');
+    background-size: cover; /* giữ nguyên tỷ lệ và hiển thị toàn bộ ảnh */
+    background-repeat: no-repeat; /* tránh lặp lại ảnh */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .logo{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+} */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -10px;
+    /* margin-bottom: 5px; */
+}
+
+.logo-container img {
+    /* width: 60px; */
+    height: 55px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.logo-container span {
+    font-size: 25px;
+    font-weight: 400;
+    color: #1B374E;
+}
+
+.container-dang-ky{
+    background-color: rgba(217, 217, 217, 0.65);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    padding: 30px; /* Added padding for a cleaner look */
+    text-align: center;
+}
+.container-dang-ky h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1B374E;
+}
+.container-dang-ky input{
+    width: 75%; /* Adjusted to make the input longer */
+    padding: 10px 45px 10px 15px; /* Added more padding for spacing and icon placement */
+    margin: 10px 0;
+    background-color: transparent; /* Set background to transparent */
+    border: 1px solid rgba(5, 18, 29, 0.7);
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Lora';
+}
+.container-dang-ky .input-group{
+    position: relative;
+}
+.container-dang-ky .input-group img{
+    position: relative;
+    right: 40px;
+    top: 20px;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    pointer-events: none; /* Prevent icon from blocking input */
+}
+.container-dang-ky button{
+    background-color: #1B374E;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Lora';
+    margin-top: 20px; /* Adds space above the button */
+}
+.container-dang-ky button:hover{
+    background-color: #244a6a; 
+}
+.existing-account {
+    display: block; /* Ensures the span is on a new line */
+    margin-top: 20px; /* Adds space above the text */
+    font-size: 16px; /* Adjusts font size */
+    color: #1B374E; /* Sets the text color */
+}
+
+.existing-account a {
+    font-weight: 600;
+    color: #1B374E; /* Color for the link */
+    text-decoration: underline; /* Underline the link for emphasis */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.existing-account a:hover {
+    color: #244a6a; /* Change color on hover */
+}
+
+@media (max-width: 1280px) {
+    .container-dang-ky {
+        width: 450px;
+    }
+    .logo-container span {
+        font-size: 22px;
+    }
+    .container-dang-ky h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-dang-ky {
+        width: 400px;
+        padding: 20px;
+    }
+    .logo-container img {
+        height: 50px !important; 
+    }
+    .logo-container span {
+        font-size: 20px !important;
+    }
+    .container-dang-ky h1 {
+        font-size: 28px;
+    }
+    .container-dang-ky input {
+        width: 80%;
+    }
+    .container-dang-ky button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .container-dang-ky .input-group img{
+        display: none;
+    }
+    .container-dang-ky .existing-account {
+        font-size: 15px;
+    }   
+}
+
+@media (max-width: 800px) {
+    .container-dang-ky {
+        width: 350px;
+        padding: 15px;
+    }
+    .container-dang-ky h1 {
+        font-size: 24px;
+    }
+    .container-dang-ky input {
+        width: 80%;
+    }
+    .container-dang-ky button {
+        font-size: 15px;
+        padding: 8px 18px;
+    }
+    .container-dang-ky .existing-account {
+        font-size: 14px;
+    }   
+}
+
+@media (max-width: 500px) {
+    .container-dang-ky {
+        width: 70%;
+        padding: 10px;
+    }
+    .container-dang-ky h1 {
+        font-size: 22px;
+    }
+    .container-dang-ky input {
+        width: 80%;
+    }
+    .container-dang-ky button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

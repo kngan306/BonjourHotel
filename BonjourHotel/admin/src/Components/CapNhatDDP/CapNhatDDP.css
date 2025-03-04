@@ -1,0 +1,346 @@
+.capnhat-ddp {
+    position: fixed; /* Đặt vị trí cố định để popup luôn nằm ở giữa */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+    display: flex; /* Sử dụng flex để căn giữa */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    z-index: 1000; /* Đảm bảo popup nằm trên các phần tử khác */
+}
+
+.container-capnhat-ddp {
+    position: relative; /* Để căn chỉnh nút ở góc dưới bên phải */
+    background-color: white;
+    animation: fadeIn 0.5s;
+    display: flex;
+    flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+    padding: 10px 30px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 55%;
+    max-width: 1000px;
+    max-height: 600px; /* Chiều cao tối đa của container */
+    overflow-y: auto; /* Cho phép cuộn dọc */
+    overflow-x: hidden; /* Ẩn cuộn ngang */
+}
+
+.container-capnhat-ddp h2 {
+    font-size: 30px;
+    color: #1B374E;
+    margin-bottom: 20px;
+}
+
+.form-container-capnhat-ddp {
+    display: flex; /* Sử dụng flex để chia đều */
+    flex-wrap: wrap; /* Để các phần tử có thể tự động xuống dòng nếu vượt quá chiều rộng */
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+.form-section-capnhat-ddp {
+    font-size: 14px;
+    flex: 1 1 30%; /* Chiếm 30% chiều rộng của thẻ cha để chia thành 3 cột */
+    min-width: 200px; /* Đặt chiều rộng tối thiểu để tránh thẻ quá nhỏ */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-group-capnhat-ddp {
+    margin-bottom: 25px;
+}
+
+.form-group-capnhat-ddp span {
+    color: red;
+}
+
+.form-group-capnhat-ddp label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group-capnhat-ddp input,
+.form-group-capnhat-ddp select {
+    font-family: 'Lora';
+    width: 100%;
+    max-width: 250px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group-capnhat-ddp select {
+    background: #fff;
+}
+
+.form-group-capnhat-ddp textarea {
+    font-family: 'Lora';
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.container-capnhat-ddp h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #1B374E;
+    margin-top: 10px;
+    /* margin-bottom: -5px; */
+}
+
+.stt{
+    width: 50px; /* Set your desired width */
+    text-align: center;
+}
+
+.icon-delete{
+    width: 50px; /* Set your desired width */
+    text-align: center;
+}
+
+.header-dachsach-phong {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử */
+    justify-content: space-between; /* Đặt các phần tử ở hai bên trái và phải */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+}
+
+.header-dachsach-phong button{
+    font-family: 'Lora';
+    background-color: #1B374E;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-capnhat-phong-vao-ddp:hover{
+    background-color: #244a6a;
+}
+
+.header-danhsach-dichvu {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử */
+    justify-content: space-between; /* Đặt các phần tử ở hai bên trái và phải */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+}
+
+.header-danhsach-dichvu button{
+    font-family: 'Lora';
+    background-color: #1B374E;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-capnhat-dichvu-vao-ddp:hover{
+    background-color: #244a6a;
+}
+
+.header-danhsach-nguoithue {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử */
+    justify-content: space-between; /* Đặt các phần tử ở hai bên trái và phải */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+}
+
+.header-danhsach-nguoithue button{
+    font-family: 'Lora';
+    background-color: #1B374E;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-capnhat-nguoithue-vao-ddp:hover{
+    background-color: #244a6a;
+}
+
+.table-container-capnhatddp {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của container */
+    margin-bottom: 5px;
+}
+
+.table-container-capnhatddp table {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của thẻ cha */
+    border-collapse: collapse; /* Gộp các đường viền */
+    margin-bottom: 20px; /* Khoảng cách phía dưới */
+}
+
+.table-container-capnhatddp th,
+.table-container-capnhatddp td {
+    font-size: 14px;
+    padding: 10px; /* Khoảng cách bên trong các ô */
+    text-align: center; /* Canh trái nội dung */
+    border: 1px solid #ddd; /* Đường viền cho các ô */
+}
+
+.table-container-capnhatddp th {
+    text-align: center;
+    background-color: rgba(93, 182, 238, 0.24);
+}
+
+.table-container-capnhatddp input[type="number"] {
+    font-family: 'Lora';
+    border: none; /* Loại bỏ viền */
+    width: 60px; /* Kích thước phù hợp với cột */
+    text-align: center; /* Canh giữa số liệu trong input */
+    padding: 5px; /* Khoảng cách bên trong input */
+    background-color: transparent; /* Để background không có màu */
+    font-size: 14px;
+    justify-content: center;
+}
+
+.room-modal{
+    margin-bottom: 20px;
+}
+
+.room-modal button{
+    font-family: 'Lora';
+    color: black;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-room-modal-content {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử */
+    justify-content: space-between; /* Đặt các phần tử ở hai bên trái và phải */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+}
+
+.header-room-modal-content button{
+    background-color: #ddd;
+}
+
+.available-rooms ul {
+    font-size: 14px;
+    list-style-type: none; /* Remove default list decoration */
+    padding: 0;
+    margin: 0;
+}
+
+.available-rooms li {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    gap: 20px; /* Adds space between each flex item */
+
+}
+
+.available-services-action select {
+    font-family: 'Lora';
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.btn-add-room{
+    background-color: rgba(143, 201, 100, 0.91);
+}
+
+.btn-add-room:hover{
+    background-color: rgba(143, 201, 100, 0.61);
+}
+
+.service-modal{
+    margin-bottom: 20px;
+}
+
+.service-modal button{
+    font-family: 'Lora';
+    color: black;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-service-modal-content {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử */
+    justify-content: space-between; /* Đặt các phần tử ở hai bên trái và phải */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+}
+
+.header-service-modal-content button{
+    background-color: #ddd;
+}
+
+.available-services ul {
+    font-size: 14px;
+    list-style-type: none; /* Remove default list decoration */
+    padding: 0;
+    margin: 0;
+}
+
+.available-services li {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    gap: 20px; /* Adds space between each flex item */
+
+}
+
+.select-room-service se{
+
+}
+.btn-add-service{
+    background-color: rgba(143, 201, 100, 0.91);
+}
+
+.btn-add-service:hover{
+    background-color: rgba(143, 201, 100, 0.61);
+}
+
+/* .table-container-capnhatddp tr:nth-child(even) {
+    background-color: #f2f2f2;
+} */
+
+.total-ddp {
+    font-size: 16px; /* Kích thước chữ cho tổng tiền */
+    font-weight: bold; /* Làm đậm chữ */
+    margin-top: 10px; /* Khoảng cách phía trên */
+    text-align: right; /* Canh phải nội dung */
+    border-top: 2px solid #ccc; /* Đường viền phía trên để tách biệt */
+}
+
+.upload-action {
+    display: flex;
+    flex-direction: column; /* Để các phần tử nằm dọc */
+    align-items: flex-start; /* Căn chỉnh bên trái */
+    justify-content: flex-start; /* Căn chỉnh lên trên cùng */
+    margin-top: 20px;
+}
+
+.btn-action-capnhat-ddp {
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    margin-top: -15px;
+    right: 4%;
+    display: flex; /* Để căn chỉnh các nút theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các nút */
+}

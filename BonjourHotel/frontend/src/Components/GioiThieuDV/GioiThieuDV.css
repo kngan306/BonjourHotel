@@ -1,0 +1,178 @@
+.gioithieu-dichvu{
+    background-color: white;
+    margin: 0;  
+    padding: 0;
+}
+.container-dv{
+    margin: 0 auto;
+    padding: 2rem;
+    margin-bottom: 40px;
+}
+.container-dv h1{
+    text-align: center;
+    font-size: 44px;
+    color: #1B374E;
+    margin-bottom: 50px;
+}
+.services{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 70px;
+    margin-left: 140px;
+}
+/* .service-card{
+    border: 1px solid #1B374E;
+    border-radius: 10px;
+    padding: 20px;
+    width: 650px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+.service-card {
+    padding: 20px;
+    width: 500px;
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: visible; /* Cho phép phần tử con tràn ra ngoài */
+}
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1px; /* Điều chỉnh độ rộng của viền */
+    background: linear-gradient(0deg, #7F8160 0%, #A2C1E2 100%);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; 
+    mask-composite: exclude;
+}   
+.img-service{
+    position: absolute;
+    top: -50px; /* Điều chỉnh giá trị để căn chỉnh theo chiều dọc */
+    left: 30px; /* Điều chỉnh giá trị để căn chỉnh theo chiều ngang */
+    z-index: 10; /* Đảm bảo img nằm trên service-card */
+    width: 120px; /* Điều chỉnh kích thước để phù hợp hơn */
+    height: 120px;
+}
+.service-card img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.service-card h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: #1B374E;
+    margin: 20px 0px 10px;
+}
+.service-card p{
+    font-size: 16px;
+    color: #1B374E;
+    text-align: justify;
+}
+
+@media (max-width: 1280px) {
+    .container-dv h1 {
+        font-size: 40px;
+    }
+    .service-card {
+        width: auto;
+        height: auto;
+    }
+    .img-service {
+        top: -40px;
+        left: 30px;
+        width: 100px;
+        height: 100px;
+    }
+    .service-card h2 {
+        font-size: 22px;
+    }
+    .service-card p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .services {
+        grid-template-columns: 1fr;
+        gap: 80px;
+        margin-left: 0;
+    }
+    .container-dv h1 {
+        font-size: 36px;
+    }
+    .service-card {
+        width: 80%;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+    .img-service {
+        top: -40px;
+        left: 30px;
+        width: 90px;
+        height: 90px;
+    }
+    .service-card h2 {
+        font-size: 24px;
+    }
+    .service-card p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container-dv {
+        padding: 1.5rem;
+    }
+    .container-dv h1 {
+        font-size: 32px;
+    }
+    .img-service {
+        top: -40px;
+        left: 20px;
+        width: 80px;
+        height: 80px;
+    }
+    .img-service img{
+        width: 90px;
+        height: 90px;
+    }
+    .service-card h2 {
+        font-size: 18px;
+    }
+    .service-card p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container-dv {
+        padding: 1rem;
+    }
+    .container-dv h1 {
+        font-size: 28px;
+    }
+    .img-service {
+        top: -30px;
+        left: 15px;
+        width: 70px;
+        height: 70px;
+    }
+    .img-service img{
+        width: 70px;
+        height: 70px;
+    }
+    .service-card h2 {
+        font-size: 16px;
+    }
+    .service-card p {
+        font-size: 12px;
+    }
+}

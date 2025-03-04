@@ -1,0 +1,108 @@
+.ql-dichvu {
+    margin: 0;
+    padding: 0;
+}
+
+.container-ql-dichvu {
+    width: 90%;
+    margin: 20px auto;
+    height: calc(100vh - 150px); /* Chiều cao cố định cho container, tùy chỉnh theo nhu cầu */
+    display: flex;
+    flex-direction: column;
+}
+
+.option-ql-dichvu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search {
+    position: relative; /* Tạo vùng chứa để định vị tuyệt đối cho icon */
+    width: 250px;
+}
+
+.search img {
+    position: absolute;
+    left: 10px; /* Khoảng cách từ cạnh trái của input */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search input[type="text"] {
+    font-family: 'Lora';
+    font-size: 15px;
+    padding: 8px 8px 10px 50px; /* Tăng padding-left để icon có khoảng cách xa hơn với chữ "Tìm kiếm" */
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center; /* Căn giữa placeholder text theo trục dọc */
+}
+
+.option-ql-dichvu select {
+    font-family: 'Lora';
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 8px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.option-ql-dichvu button {
+    font-family: 'Lora';
+    font-size: 15px;
+    padding: 10px 18px;
+    background-color: #1B374E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-create:hover {
+    background-color: #244a6a;
+}
+
+.content-table-ql-dichvu {
+    flex-grow: 1; /* Đảm bảo nội dung bảng mở rộng chiều cao bên trong container */
+    overflow: hidden;
+}
+
+.table-responsive-ql-dichvu {
+    overflow-x: auto; /* Cho phép cuộn ngang */
+    overflow-y: auto; /* Cho phép cuộn dọc */
+    max-height: 600px; /* Đặt max-height nếu bạn muốn thêm thanh cuộn dọc */
+}
+
+.content-table-ql-dichvu table {
+    width: 100%;
+    min-width: 1200px; /* Đặt chiều rộng tối thiểu để tránh quá nhỏ */
+    table-layout: auto; /* Cho phép điều chỉnh kích thước tự động */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.content-table-ql-dichvu table th,
+.content-table-ql-dichvu table td {
+    font-size: 15px;
+    padding: 10px; /* Đảm bảo các ô có khoảng cách cho nội dung */
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.content-table-ql-dichvu table th {
+    text-align: center;
+    background-color: rgba(93, 182, 238, 0.24);
+}
+
+.content-table-ql-dichvu table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.content-table-ql-dichvu button{
+    width: 25px;
+}
+
+
+

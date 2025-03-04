@@ -1,0 +1,141 @@
+body {
+    font-family: 'Lora', serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.thongtin-datphong {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+
+.booking-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Thêm thuộc tính này để các cột không kéo giãn chiều cao */
+    margin-top: 20px;
+}
+
+.left-column {
+    flex: 2;
+    margin-right: 20px;
+    background-color: white; /* Màu nền cho cột bên trái, bạn có thể thay đổi màu này */
+    border-radius: 8px; /* Để các góc cũng bo tròn như cột bên phải */
+    padding: 20px; /* Thêm padding nếu cần */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng nhẹ cho cột bên trái */
+    margin-bottom: 40px;
+}
+
+.right-column {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    align-self: flex-start; /* Đảm bảo chiều cao của cột theo nội dung */
+    margin-bottom: 40px;
+
+}
+
+.left-column h2,
+.right-column h2 {
+    color: #1B374E;
+}
+
+@media (max-width: 1280px) {
+    .thongtin-datphong {
+        padding: 15px;
+    }
+
+    .booking-page {
+        gap: 10px;
+    }
+
+    .left-column {
+        margin-left: 15px;
+    }
+
+    .left-column, .right-column {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .booking-page {
+        gap: 10px;
+    }
+
+    .left-column {
+        flex: 3; /* Tăng tỷ lệ cột trái */
+    }
+
+    .right-column {
+        flex: 2; /* Tăng tỷ lệ cột phải */
+    }
+
+    .breadcrumb img{
+        width: 22px;
+        height: 22px;
+    }
+
+    .breadcrumb h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .booking-page {
+        flex-direction: column; /* Chuyển sang hiển thị dọc */
+    }
+
+    .left-column, .right-column {
+        flex: none;
+        width: 90%; /* Chiếm toàn bộ chiều ngang */
+        margin: 0 auto;
+        margin-bottom: 20px; /* Thêm khoảng cách dưới */
+    }
+
+    .breadcrumb {
+        margin-left: 10px !important;
+    }
+
+    .breadcrumb img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .breadcrumb h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .thongtin-datphong {
+        padding: 10px;
+    }
+
+    .left-column, .right-column {
+        padding: 10px;
+    }
+
+    .breadcrumb img{
+        width: 18px;
+        height: 18px;
+    }
+
+    .breadcrumb h3 {
+        font-size: 16px;
+    }
+
+    .booking-page {
+        gap: 8px; /* Giảm khoảng cách giữa các phần */
+    }
+}
+
