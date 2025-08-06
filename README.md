@@ -15,7 +15,6 @@
 - Account management
 - Role-based access control
 - Dashboard reporting
-- Data validation
 
 ### 🧾 Customer Side:
 - Browse hotels and available rooms
