@@ -16,7 +16,7 @@
 - Role-based access control
 - Dashboard reporting
 
-### 🧾 Customer Side:
+### 👤 Customer Side:
 - Browse hotels and available rooms
 - Filter rooms by criteria
 - View room details
