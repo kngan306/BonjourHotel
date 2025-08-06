@@ -1,6 +1,6 @@
-# 🏨 Bonjour – Hotel Booking Management System
+# 🏨 BonjourHotel – Hotel Booking Management System
 
-**Bonjour** is a comprehensive hotel room booking and management web application designed to streamline hotel operations, improve customer booking experiences, and support hotel administrative tasks efficiently.
+**BonjourHotel** is a comprehensive hotel room booking and management web application designed to streamline hotel operations, improve customer booking experiences, and support hotel administrative tasks efficiently.
 
 ## 🚀 Features
 
@@ -13,7 +13,6 @@
 - Employee management
 - Booking management
 - Account management
-- Role-based access control
 - Dashboard reporting
 
 ### 👤 Customer Side:
