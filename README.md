@@ -2,6 +2,8 @@
 
 **BonjourHotel** is a comprehensive hotel room booking and management web application designed to streamline hotel operations, improve customer booking experiences, and support hotel administrative tasks efficiently.
 
+🗓 **Project Duration:** September 2024 – November 2024
+
 ## 🚀 Features
 
 ### 👤 Admin Side:
